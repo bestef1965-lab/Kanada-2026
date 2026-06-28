@@ -176,6 +176,19 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
 @media(max-width:860px){.station-gallery{grid-template-columns:1fr}.image-gallery-github figure{border-radius:22px}}
 @media print{.image-gallery-github figure,.station-gallery img{box-shadow:none;break-inside:avoid}}
 
+
+/* Wetterintegration */
+.weather-box{margin-top:14px;padding:16px;border-radius:22px;border:1px solid #bae6fd;background:linear-gradient(135deg,#eff6ff,#ecfeff)}
+.weather-box h4{margin:0 0 8px}
+.weather-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.weather-item{background:#fff;border:1px solid #dbeafe;border-radius:16px;padding:10px}
+.weather-item b{display:block;color:#075985;margin-bottom:3px}
+.weather-link{display:inline-flex;margin-top:12px;padding:9px 12px;border-radius:999px;background:#0f4c81;color:#fff;font-weight:850}
+body.dark .weather-box{background:linear-gradient(135deg,#082f49,#0f172a);border-color:#075985}
+body.dark .weather-item{background:#020617;border-color:#334155}
+@media(max-width:860px){.weather-grid{grid-template-columns:1fr}}
+@media print{.weather-box{break-inside:avoid}.weather-link{display:none}}
+
 </style>
 </head>
 <body>
@@ -184,7 +197,7 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
   <div class="wrap">
     <div class="app-title">🇨🇦 Kanada 2026 · Reiseführer 2.0</div>
     <nav class="nav">
-      <a href="#bildpaket">Bilder</a><a href="#route">Route</a><a href="#week1">Woche 1</a><a href="#week2">Woche 2</a><a href="#week3">Woche 3</a><a href="#bilder">Bilder</a><a href="#phase3">Karten</a>
+      <a href="#bildpaket">Bilder</a><a href="#wetterhinweis">Wetter</a><a href="#route">Route</a><a href="#week1">Woche 1</a><a href="#week2">Woche 2</a><a href="#week3">Woche 3</a><a href="#bilder">Bilder</a><a href="#phase3">Karten</a>
     </nav>
   </div>
   <div class="mobile-tabs">
@@ -315,6 +328,17 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
   </div>
 </section>
 
+
+<section class="route" id="wetterhinweis">
+  <div class="wrap">
+    <div class="panel">
+      <div class="kicker">Wetter</div>
+      <h2>Wetterhinweis für Juli 2026</h2>
+      <p>Eine echte Tagesprognose ist erst kurz vor der Reise zuverlässig. Deshalb enthält jeder Tag typisches Juli-Wetter, Kleidungsempfehlungen und einen Link zur aktuellen Vorhersage.</p>
+    </div>
+  </div>
+</section>
+
 <section class="route" id="search">
   <div class="wrap">
     <div class="search-shell">
@@ -379,6 +403,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Montréal verbindet französische, britische und nordamerikanische Einflüsse – ideal als kultureller Einstieg in Kanada.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-01">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Montréal</div>
+          <div class="weather-item"><b>Typisch im Juli</b>19–27 °C</div>
+          <div class="weather-item"><b>Erwartung</b>warm, teils schwül; Gewitter möglich</div>
+          <div class="weather-item"><b>Packhinweis</b>leichte Kleidung, Regenjacke</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Montr%C3%A9al+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -442,6 +478,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Mount Royal gab der Stadt ihren Namen – Montréal leitet sich von Mont Royal ab.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-02">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Montréal</div>
+          <div class="weather-item"><b>Typisch im Juli</b>19–27 °C</div>
+          <div class="weather-item"><b>Erwartung</b>warmer Stadttag</div>
+          <div class="weather-item"><b>Packhinweis</b>Wasser, Sonnenschutz, bequeme Schuhe</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Montr%C3%A9al+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -505,6 +553,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Kingston war 1841 kurzzeitig Hauptstadt der Province of Canada.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-03">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Kingston</div>
+          <div class="weather-item"><b>Typisch im Juli</b>18–26 °C</div>
+          <div class="weather-item"><b>Erwartung</b>warm, am See windig</div>
+          <div class="weather-item"><b>Packhinweis</b>leichte Jacke</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Kingston+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -568,6 +628,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Die Thousand Islands bestehen aus deutlich mehr als 1.000 Inseln – einige sind winzig, andere groß genug für ganze Anwesen.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-04">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Thousand Islands</div>
+          <div class="weather-item"><b>Typisch im Juli</b>18–26 °C</div>
+          <div class="weather-item"><b>Erwartung</b>auf dem Wasser kühler</div>
+          <div class="weather-item"><b>Packhinweis</b>Windjacke, Sonnencreme</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Thousand+Islands+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -631,6 +703,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Die Horseshoe Falls liegen überwiegend auf kanadischer Seite und sind der spektakulärste Teil der Niagara Falls.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-05">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Niagara Falls</div>
+          <div class="weather-item"><b>Typisch im Juli</b>19–28 °C</div>
+          <div class="weather-item"><b>Erwartung</b>warm, Sprühnebel an den Fällen</div>
+          <div class="weather-item"><b>Packhinweis</b>Poncho, rutschfeste Schuhe</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Niagara+Falls+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -694,6 +778,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Niagara-on-the-Lake gilt als eine der schönsten Kleinstädte Ontarios.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-06">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Toronto</div>
+          <div class="weather-item"><b>Typisch im Juli</b>20–28 °C</div>
+          <div class="weather-item"><b>Erwartung</b>sommerlich warm</div>
+          <div class="weather-item"><b>Packhinweis</b>Sonnenschutz, Wasser</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Toronto+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -757,6 +853,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Toronto ist Kanadas größte Stadt und eine der vielfältigsten Metropolen Nordamerikas.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-07">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Toronto</div>
+          <div class="weather-item"><b>Typisch im Juli</b>20–28 °C</div>
+          <div class="weather-item"><b>Erwartung</b>warm, am Wasser angenehmer</div>
+          <div class="weather-item"><b>Packhinweis</b>leichte Jacke abends</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Toronto+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -823,6 +931,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Vancouver liegt zwischen Meer und Bergen; genau dieser Kontrast macht die Stadt so besonders.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-08">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Vancouver</div>
+          <div class="weather-item"><b>Typisch im Juli</b>14–22 °C</div>
+          <div class="weather-item"><b>Erwartung</b>mild, wechselhaft</div>
+          <div class="weather-item"><b>Packhinweis</b>leichte Jacke</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Vancouver+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -886,6 +1006,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Stanley Park ist größer als der New Yorker Central Park.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-09">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Vancouver</div>
+          <div class="weather-item"><b>Typisch im Juli</b>14–22 °C</div>
+          <div class="weather-item"><b>Erwartung</b>angenehm, Regen möglich</div>
+          <div class="weather-item"><b>Packhinweis</b>Zwiebellook</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Vancouver+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -949,6 +1081,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Victoria wirkt britischer als viele andere Orte in Kanada – inklusive Gärten, Teekultur und viktorianischer Architektur.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-10">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Victoria</div>
+          <div class="weather-item"><b>Typisch im Juli</b>13–22 °C</div>
+          <div class="weather-item"><b>Erwartung</b>mild, auf Fähre windig</div>
+          <div class="weather-item"><b>Packhinweis</b>Windjacke</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Victoria+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1012,6 +1156,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Cathedral Grove beherbergt einige der eindrucksvollsten alten Douglasien auf Vancouver Island.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-11">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Ucluelet</div>
+          <div class="weather-item"><b>Typisch im Juli</b>11–18 °C</div>
+          <div class="weather-item"><b>Erwartung</b>kühl, feucht, Nebel möglich</div>
+          <div class="weather-item"><b>Packhinweis</b>Regenjacke, Fleece</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Ucluelet+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1075,6 +1231,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Der Pacific Rim National Park ist bekannt für Regenwald, Brandung und lange Strände.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-12">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Pacific Rim</div>
+          <div class="weather-item"><b>Typisch im Juli</b>11–18 °C</div>
+          <div class="weather-item"><b>Erwartung</b>Küstenwetter, schnell wechselnd</div>
+          <div class="weather-item"><b>Packhinweis</b>Regenjacke, Wanderschuhe</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Pacific+Rim+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1138,6 +1306,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Die Stadt ist Namensgeberin der Nanaimo Bar – einem kanadischen Dessertklassiker.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-13">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Nanaimo</div>
+          <div class="weather-item"><b>Typisch im Juli</b>13–23 °C</div>
+          <div class="weather-item"><b>Erwartung</b>mildes Inselwetter</div>
+          <div class="weather-item"><b>Packhinweis</b>leichte Jacke</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Nanaimo+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1204,6 +1384,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Der Sea to Sky Highway zählt zu den schönsten Küsten-Berg-Straßen Kanadas.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-14">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Whistler</div>
+          <div class="weather-item"><b>Typisch im Juli</b>10–25 °C</div>
+          <div class="weather-item"><b>Erwartung</b>Tal warm, Berg kühler</div>
+          <div class="weather-item"><b>Packhinweis</b>Zwiebellook</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Whistler+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1267,6 +1459,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Whistler war einer der Austragungsorte der Olympischen Winterspiele 2010.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-15">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Whistler</div>
+          <div class="weather-item"><b>Typisch im Juli</b>10–25 °C</div>
+          <div class="weather-item"><b>Erwartung</b>bei Gondel oben kühler</div>
+          <div class="weather-item"><b>Packhinweis</b>Fleece, Wettercheck</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Whistler+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1330,6 +1534,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Die Landschaft wechselt auf dieser Etappe deutlich: von alpinen Bergen zu trockenerem Interior-Klima.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-16">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Kamloops</div>
+          <div class="weather-item"><b>Typisch im Juli</b>15–30 °C</div>
+          <div class="weather-item"><b>Erwartung</b>trocken und heiß möglich</div>
+          <div class="weather-item"><b>Packhinweis</b>viel Wasser, Kappe</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Kamloops+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1393,6 +1609,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Rogers Pass war ein Schlüsselabschnitt beim Bau der kanadischen Eisenbahn durch die Rockies.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-17">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Golden</div>
+          <div class="weather-item"><b>Typisch im Juli</b>10–25 °C</div>
+          <div class="weather-item"><b>Erwartung</b>morgens frisch, tags mild</div>
+          <div class="weather-item"><b>Packhinweis</b>Fleece morgens</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Golden+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1456,6 +1684,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Yoho bedeutet in der Sprache der Cree sinngemäß Staunen oder Ehrfurcht – passend zur Landschaft.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-18">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Yoho / Lake Louise</div>
+          <div class="weather-item"><b>Typisch im Juli</b>5–20 °C</div>
+          <div class="weather-item"><b>Erwartung</b>Höhenlage, Wetterwechsel</div>
+          <div class="weather-item"><b>Packhinweis</b>warme Schicht</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Yoho+%2F+Lake+Louise+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1519,6 +1759,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Der Icefields Parkway gilt als eine der schönsten Panoramastraßen der Welt.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-19">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Icefields Parkway</div>
+          <div class="weather-item"><b>Typisch im Juli</b>3–18 °C</div>
+          <div class="weather-item"><b>Erwartung</b>hochgelegen, kühl und windig</div>
+          <div class="weather-item"><b>Packhinweis</b>warme Jacke</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Icefields+Parkway+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1582,6 +1834,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Canmore war ebenfalls Olympia-Ort 1988 und ist heute ein beliebter Ausgangspunkt für die Rockies.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-20">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Canmore / Banff</div>
+          <div class="weather-item"><b>Typisch im Juli</b>7–23 °C</div>
+          <div class="weather-item"><b>Erwartung</b>morgens frisch, tags mild</div>
+          <div class="weather-item"><b>Packhinweis</b>Zwiebellook</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Canmore+%2F+Banff+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1645,6 +1909,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Calgary ist bekannt als Tor zu den Rockies und für die Calgary Stampede.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-21">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Calgary</div>
+          <div class="weather-item"><b>Typisch im Juli</b>10–24 °C</div>
+          <div class="weather-item"><b>Erwartung</b>trocken, Gewitter möglich</div>
+          <div class="weather-item"><b>Packhinweis</b>leichte Regenjacke</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Calgary+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
@@ -1708,6 +1984,18 @@ body.dark .premium-image-card{background:#0f172a;border-color:#334155}
       <details><summary>💡 Fun Fact / Hintergrund</summary><p>Die Reise endet mit einem direkten Transatlantikflug von Alberta zurück nach Deutschland.</p></details>
       
       
+      
+      <div class="weather-box" id="wetter-22">
+        <h4>🌦️ Wetter & Kleidung</h4>
+        <div class="weather-grid">
+          <div class="weather-item"><b>Ort</b>Calgary Airport</div>
+          <div class="weather-item"><b>Typisch im Juli</b>10–24 °C</div>
+          <div class="weather-item"><b>Erwartung</b>für Rückfahrt relevant</div>
+          <div class="weather-item"><b>Packhinweis</b>Flugkleidung plus Jacke</div>
+        </div>
+        <a class="weather-link" href="https://www.google.com/search?q=Wetter+Calgary+Airport+Juli+2026+Vorhersage" target="_blank" rel="noopener">Aktuelle Wettervorhersage öffnen</a>
+      </div>
+    
       <div class="map-panel">
         <h4>🗺️ Karten für diesen Tag</h4>
         <div class="map-grid">
