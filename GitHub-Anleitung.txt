@@ -1,0 +1,8 @@
+KANADA 2026 – VERSION 2.1 STABIL
+
+1. ZIP entpacken.
+2. Alle Dateien direkt in das GitHub-Repository hochladen und vorhandene Dateien ersetzen.
+3. GitHub Pages: Branch main, Ordner / (root).
+4. Seite mit ?v=211 öffnen.
+
+Die Google-Drive-Galerie für Tag 1 wird erst nach einem Klick geladen. Falls Google die Einbettung blockiert, funktioniert der Button „In Google Drive öffnen“ weiterhin.
