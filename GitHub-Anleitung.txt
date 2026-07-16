@@ -1,1 +1,0 @@
-Alle Dateien aus diesem Ordner direkt in die oberste Ebene des GitHub-Repositorys hochladen. Nicht den übergeordneten Ordner selbst hochladen. Unterkünfte und Mietwagen werden mit Adressen, Zeiträumen und Kartenlinks angezeigt.
